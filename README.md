@@ -1,4 +1,4 @@
-# Ionic Recipe WebApp
+# Ionic Recipe WebApp "Shook"
 
 The ultimative recipe and shopping app to stay organized. This app allows the organization of recipes, your weekly food plan, your home food supplies and your shopping list. 
 
