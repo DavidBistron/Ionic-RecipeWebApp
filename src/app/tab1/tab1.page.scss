@@ -14,7 +14,7 @@
 .colored-text {
   color: #55babf;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 2em;
 }
 
@@ -24,15 +24,29 @@
   font-size: 2em;
 }
 
-.heart-icon {
-  top: 1.5em;
-  color: red;
-  background-color: #000000;
-  font-size: 3em;
+.recipes-header {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5%;
+  padding: 5%;
+  background-color: #55babf;
 }
+
+.recipes-area {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 5%;
+  background-color: #c9eeee;;
+}
+
+.accordion-item {
+  text-align: center;
+}
+
 
 /* 
   Color 4: 200, 236, 238
-  Color 5: Red: 176, 36, 27
   Color 6: Light-Red: 231, 193, 193 
 */

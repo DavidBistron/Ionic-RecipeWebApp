@@ -14,13 +14,37 @@
 <ion-content [fullscreen]="true">
 
   <div class="recipes-header">
-    Recipes Header
+    <ion-icon name="restaurant"></ion-icon> Recipes
   </div>
 
   <div class="recipes-area">
-    Recipes Area
+    <ion-accordion-group>
+      <ion-accordion value="first" toggleIconSlot="start">
+        <ion-item slot="header" color="secondary" class="accordion-item">
+          <ion-label>Cereal</ion-label>
+          
+        </ion-item>
+        <div class="ion-padding" slot="content">Cereals with Berries</div>
+        <div class="ion-padding" slot="content">Cereals with Apples</div>
+        <div class="ion-padding" slot="content">Bread with Veggies</div>
+        <div class="ion-padding" slot="content">Bread with Tomatoes</div>
+      </ion-accordion>
+      <ion-accordion value="second" toggleIconSlot="start">
+        <ion-item slot="header" color="secondary" class="accordion-item">
+          <ion-label>Noodles</ion-label>
+          
+        </ion-item>
+        <div class="ion-padding" slot="content">Veggie Lasagne</div>
+        <div class="ion-padding" slot="content">Noodles + Green Pesto</div>
+        <div class="ion-padding" slot="content">Noodles + Veggies</div>
+      </ion-accordion>
+      <ion-accordion value="third" toggleIconSlot="start">
+        <ion-item slot="header" color="secondary" class="accordion-item">
+          <ion-label>Potatoes</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Spicy Oven Potatoes</div>  
+      </ion-accordion>
+    </ion-accordion-group>
   </div>
 
-  
-  <app-explore-container name="Recipes Page Content"></app-explore-container>
 </ion-content>
