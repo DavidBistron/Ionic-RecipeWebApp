@@ -1,3 +1,49 @@
+.recipes-area .content-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.recipes-area .left-side {
+  width: 70%;                   /* 70% width for the recipe name */
+  background-color: #c9eeee; 
+  display: flex;
+  align-items: center;          /* Vertically align text */
+  justify-content: flex-start;  /* Align text to the left */
+  padding: 1em;                 /* Text in Box deosn't hit the left border */
+  border-radius: 8px;
+  min-height: 100px;
+}
+
+.recipes-area .right-side {
+  width: 30%;                   /* 30% width for the box with chips */
+  background-color: #c9eeee;  /* Box color */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-radius: 8px;
+  align-items: flex-start;      /* Align chips to the top of the box */
+  justify-content: flex-start;  /* Align chips to the left */
+  min-height: 100px;            /* Ensure box is tall enough to fit the chips */
+}
+
+.recipes-area .left-side,
+.recipes-area .right-side {
+  box-sizing: border-box;       /* Ensure padding doesn't affect width calculations */
+}
+
+/* Change */
+.ion-padding {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.left-side {
+  margin-right: 0.5em;
+}
+
 .title-with-icon {
   display: flex;
   text-align: center;

@@ -12,32 +12,74 @@
 
 <!-- Main Content -->
 <ion-content [fullscreen]="true">
-
   <div class="recipes-header">
-    <ion-icon name="restaurant"></ion-icon> Recipes
+    <ion-icon name="restaurant"></ion-icon>Recipes
   </div>
 
+  <!-- Div class to style whole recipe area -->
   <div class="recipes-area">
+    <!-- Collapsibles Categories = Accordion -->
     <ion-accordion-group>
+      
+      <!-- First Category -->
       <ion-accordion value="first" toggleIconSlot="start">
         <ion-item slot="header" color="secondary" class="accordion-item">
           <ion-label>Cereal</ion-label>
-          
         </ion-item>
-        <div class="ion-padding" slot="content">Cereals with Berries</div>
-        <div class="ion-padding" slot="content">Cereals with Apples</div>
-        <div class="ion-padding" slot="content">Bread with Veggies</div>
-        <div class="ion-padding" slot="content">Bread with Tomatoes</div>
+        
+        <!-- First Recipe in Category -->
+        <div class="ion-padding" slot="content">
+          <div class="content-wrapper">
+            <div class="left-side">
+              Cereals with Berries
+            </div>
+
+            <div class="right-side">
+              <ion-chip color="dark">Iron</ion-chip>
+              <ion-chip color="danger">Histamine</ion-chip>
+              <ion-chip color="dark">Veggie</ion-chip>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Second Recipe in Category -->
+        <div class="ion-padding" slot="content">
+          <div class="content-wrapper">
+            <div class="left-side">
+              Cereals with Apples
+            </div>
+            <div class="right-side">
+              <ion-chip color="dark">Iron</ion-chip>
+              <ion-chip color="danger">Histamine</ion-chip>
+              <ion-chip color="dark">Veggie</ion-chip>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Recipe in Category -->
+        <div class="ion-padding" slot="content">
+          <div class="content-wrapper">
+            <div class="left-side">
+              Bread with Veggies
+            </div>
+            <div class="right-side">
+              <ion-chip color="dark">Tasty</ion-chip>
+            </div>
+          </div>
+        </div>
       </ion-accordion>
+
+      <!-- Second Category -->
       <ion-accordion value="second" toggleIconSlot="start">
         <ion-item slot="header" color="secondary" class="accordion-item">
           <ion-label>Noodles</ion-label>
-          
         </ion-item>
         <div class="ion-padding" slot="content">Veggie Lasagne</div>
         <div class="ion-padding" slot="content">Noodles + Green Pesto</div>
         <div class="ion-padding" slot="content">Noodles + Veggies</div>
       </ion-accordion>
+
+      <!-- Third Category -->
       <ion-accordion value="third" toggleIconSlot="start">
         <ion-item slot="header" color="secondary" class="accordion-item">
           <ion-label>Potatoes</ion-label>
@@ -46,5 +88,4 @@
       </ion-accordion>
     </ion-accordion-group>
   </div>
-
 </ion-content>
