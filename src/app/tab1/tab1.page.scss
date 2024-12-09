@@ -78,7 +78,7 @@
   text-align: center;
   margin-top: 5%;
   padding: 5%;
-  background-color: #55babf;
+  background-color: #42a2a8;
 }
 
 .recipes-area {
@@ -89,6 +89,21 @@
 
 .accordion-item {
   text-align: center;
+}
+
+.top-container {
+  position: static;
+}
+
+.heart-icon {
+  position: relative;
+  top: -1.3em;
+  left: 2.2em;
+  z-index: 1;
+}
+
+.custom-icon {
+  padding-right: 0.2em;
 }
 
 

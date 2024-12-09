@@ -1,19 +1,21 @@
 <!-- Header -->
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title class="title-with-icon">
-    
-      <ion-icon name="cart" class="cart-icon" color="primary"></ion-icon>
-      <span class="colored-text">Sh</span><span class="black-text">ook</span>
-      
-    </ion-title>
+    <div class="top-container">
+      <ion-title class="title-with-icon">
+        <ion-icon name="heart" class="heart-icon" color="dark"></ion-icon>
+        <ion-icon name="cart" class="cart-icon" color="primary"></ion-icon>
+        <!-- Split colors for Shook -->
+        <span class="colored-text">Sh</span><span class="black-text">ook</span>
+      </ion-title>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <!-- Main Content -->
 <ion-content [fullscreen]="true">
   <div class="recipes-header">
-    <ion-icon name="restaurant"></ion-icon>Recipes
+    <ion-icon name="restaurant" class="custom-icon"></ion-icon>Recipes
   </div>
 
   <!-- Div class to style whole recipe area -->
@@ -25,7 +27,13 @@
       <ion-accordion value="first" toggleIconSlot="start">
         <ion-item slot="header" color="secondary" class="accordion-item">
           <ion-label>Cereal</ion-label>
+          <ion-button color="dark">
+            +
+          </ion-button>
         </ion-item>
+
+        <!-- Add a FAB button for "Add Recipe" functionality -->
+        
         
         <!-- First Recipe in Category -->
         <div class="ion-padding" slot="content">
@@ -73,6 +81,9 @@
       <ion-accordion value="second" toggleIconSlot="start">
         <ion-item slot="header" color="secondary" class="accordion-item">
           <ion-label>Noodles</ion-label>
+          <ion-button color="dark">
+            +
+          </ion-button>
         </ion-item>
         <div class="ion-padding" slot="content">Veggie Lasagne</div>
         <div class="ion-padding" slot="content">Noodles + Green Pesto</div>
@@ -83,6 +94,9 @@
       <ion-accordion value="third" toggleIconSlot="start">
         <ion-item slot="header" color="secondary" class="accordion-item">
           <ion-label>Potatoes</ion-label>
+          <ion-button color="dark">
+            +
+          </ion-button>
         </ion-item>
         <div class="ion-padding" slot="content">Spicy Oven Potatoes</div>  
       </ion-accordion>
