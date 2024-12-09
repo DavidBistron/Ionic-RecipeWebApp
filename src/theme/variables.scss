@@ -1,2 +1,43 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+
+/* Variables for all modes */
+:root {
+  /* Background of entire app */
+  --ion-background-color: light;
+
+  /* Primary color */
+  --ion-color-primary: #55babf;
+  --ion-color-primary-rgb: 85, 186, 191;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-contrast-rgb: 0, 0, 0;
+  --ion-color-primary-shade: #4ba4a8;
+  --ion-color-primary-tint: #66c1c5;
+
+  /* Secondary color */
+  --ion-color-secondary: #97dfdf;
+	--ion-color-secondary-rgb: 151,223,223;
+	--ion-color-secondary-contrast: #000000;
+	--ion-color-secondary-contrast-rgb: 0,0,0;
+	--ion-color-secondary-shade: #85c4c4;
+	--ion-color-secondary-tint: #a1e2e2;
+
+  /* Tertiary color */
+  --ion-color-tertiary: #c9eeee;
+	--ion-color-tertiary-rgb: 201,238,238;
+	--ion-color-tertiary-contrast: #000000;
+	--ion-color-tertiary-contrast-rgb: 0,0,0;
+	--ion-color-tertiary-shade: #b1d1d1;
+	--ion-color-tertiary-tint: #cef0f0;
+  
+  /* Success color */
+
+  /* Warning color */
+  --ion-color-danger: #b0241b;
+	--ion-color-danger-rgb: 176,36,27;
+	--ion-color-danger-contrast: #ffffff;
+	--ion-color-danger-contrast-rgb: 255,255,255;
+	--ion-color-danger-shade: #9b2018;
+	--ion-color-danger-tint: #b83a32;
+
+}

@@ -1,17 +1,26 @@
+<!-- Header -->
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Recipes
+    <ion-title class="title-with-icon">
+    
+      <ion-icon name="cart" class="cart-icon" color="primary"></ion-icon>
+      <span class="colored-text">Sh</span><span class="black-text">ook</span>
+      
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- Main Content -->
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Recipes Page</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
+  <div class="recipes-header">
+    Recipes Header
+  </div>
+
+  <div class="recipes-area">
+    Recipes Area
+  </div>
+
+  
   <app-explore-container name="Recipes Page Content"></app-explore-container>
 </ion-content>
