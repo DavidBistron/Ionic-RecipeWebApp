@@ -1,0 +1,33 @@
+/* Header area below Shook */
+.header-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #42a2a8;
+  font-size: 5vh;
+  margin-top: 12vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+.header-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  align-content: center;
+  text-align: center;
+  background-color: #c9eeee;
+  color: black;
+}
+
+ion-icon[name="nutrition"] {
+  padding: 26%;
+}
+
+.header-text {
+  color: white;
+  font-family: 'Satisfy';
+  align-items: center;
+  font-size: 150%; 
+}

@@ -1,9 +1,11 @@
-/*
-.top-container {
-  position: static;
+.title-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+  color: primary;
 }
-*/
-
 
 .heart-icon {
   position: relative;
@@ -12,6 +14,12 @@
   z-index: 10;
 }
 
+.cart-icon {
+  vertical-align: bottom;
+  font-size: 3em;
+  top: 0;
+  z-index: 10;
+}
 
 .colored-text {
   color: #55babf;
@@ -24,21 +32,4 @@
   color: #000000;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 2em;
-}
-
-
-.title-with-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 2em;
-  color: primary;
-}
-
-.cart-icon {
-  vertical-align: bottom;
-  font-size: 3em;
-  top: 0;
-  z-index: 10;
 }
