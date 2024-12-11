@@ -1,0 +1,32 @@
+{
+  "Cereal": [
+    {
+      "name": "Cereals with Berries",
+      "amount": 200,
+      "unit": "g",
+      "tags": ["Iron", "Histamine", "Veggie"]
+    },
+    {
+      "name": "Cereals with Apples",
+      "amount": 0.5,
+      "unit": "kg",
+      "tags": ["Iron", "Histamine", "Veggie"]
+    }
+  ],
+  "Noodles": [
+    {
+      "name": "Veggie Lasagne",
+      "amount": 1,
+      "unit": "plate",
+      "tags": ["Veggie"]
+    }
+  ],
+  "Potatoes": [
+    {
+      "name": "Spicy Oven Potatoes",
+      "amount": 4,
+      "unit": "pieces",
+      "tags": []
+    }
+  ]
+}

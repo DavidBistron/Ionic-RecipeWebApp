@@ -18,48 +18,19 @@
       <ion-accordion value="first" toggleIconSlot="start">
         <ion-item slot="header" color="secondary" class="accordion-item">
           <ion-label>Cereal</ion-label>
-          <ion-button color="dark">
+          <ion-button color="light" (click)="openAddRecipePopup('Cereal')"> <!-- Open PopUp-->
             +
           </ion-button>
         </ion-item>
-        
+  
         <!-- First Recipe in Category -->
-        <div class="ion-padding" slot="content">
+        <div *ngFor="let recipe of recipes.Cereal" class="ion-padding" slot="content"> <!-- ngFor -->
           <div class="content-wrapper">
-            <div class="left-side">
-              Cereals with Berries
-            </div>
-
+            <div class="left-side">{{ recipe.name }}</div>
+              
             <div class="right-side">
-              <ion-chip color="dark">Iron</ion-chip>
-              <ion-chip color="danger">Histamine</ion-chip>
-              <ion-chip color="dark">Veggie</ion-chip>
-            </div>
-          </div>
-        </div>
-      
-        <!-- Second Recipe in Category -->
-        <div class="ion-padding" slot="content">
-          <div class="content-wrapper">
-            <div class="left-side">
-              Cereals with Apples
-            </div>
-            <div class="right-side">
-              <ion-chip color="dark">Iron</ion-chip>
-              <ion-chip color="danger">Histamine</ion-chip>
-              <ion-chip color="dark">Veggie</ion-chip>
-            </div>
-          </div>
-        </div>
-
-        <!-- Second Recipe in Category -->
-        <div class="ion-padding" slot="content">
-          <div class="content-wrapper">
-            <div class="left-side">
-              Bread with Veggies
-            </div>
-            <div class="right-side">
-              <ion-chip color="dark">Tasty</ion-chip>
+              <ion-chip color="dark">{{ recipe.amount }} {{ recipe.unit }}</ion-chip>
+              <ion-chip *ngFor="let tag of recipe.tags" [color]="tag === 'Histamine' ? 'danger' : 'dark'">{{ tag }}</ion-chip>
             </div>
           </div>
         </div>
@@ -69,25 +40,39 @@
       <ion-accordion value="second" toggleIconSlot="start">
         <ion-item slot="header" color="secondary" class="accordion-item">
           <ion-label>Noodles</ion-label>
-          <ion-button color="dark">
+          <ion-button color="light" (click)="openAddRecipePopup('Noodles')">
             +
           </ion-button>
         </ion-item>
-        <div class="ion-padding" slot="content">Veggie Lasagne</div>
-        <div class="ion-padding" slot="content">Noodles + Green Pesto</div>
-        <div class="ion-padding" slot="content">Noodles + Veggies</div>
+        <div *ngFor="let recipe of recipes.Noodles" class="ion-padding" slot="content">
+          <div class="content-wrapper">
+            <div class="left-side">{{ recipe.name }}</div>
+            <div class="right-side">
+              <ion-chip color="dark">{{ recipe.amount }} {{ recipe.unit }}</ion-chip>
+            </div>
+          </div>
+        </div>
       </ion-accordion>
 
       <!-- Third Category -->
       <ion-accordion value="third" toggleIconSlot="start">
         <ion-item slot="header" color="secondary" class="accordion-item">
           <ion-label>Potatoes</ion-label>
-          <ion-button color="dark">
+          <ion-button color="light" (click)="openAddRecipePopup('Potatoes')">
             +
           </ion-button>
         </ion-item>
-        <div class="ion-padding" slot="content">Spicy Oven Potatoes</div>  
+
+        <div *ngFor="let recipe of recipes.Potatoes" class="ion-padding" slot="content">
+          <div class="content-wrapper">
+            <div class="left-side">{{ recipe.name }}</div>
+            <div class="right-side">
+              <ion-chip color="dark">{{ recipe.amount }} {{ recipe.unit }}</ion-chip>
+            </div>
+          </div>
+        </div>
       </ion-accordion>
+      
     </ion-accordion-group>
   </div>
 </ion-content>
