@@ -15,6 +15,7 @@ export interface Recipe {
 export interface RecipeCategory {
   [key: string]: { // Index-Signatur für beliebige Kategorien
     name: string;
+    description: string,
     amount: number;
     unit: string;
     tags: string[];
@@ -35,12 +36,14 @@ export class Tab1Page {
     Cereal: [
       {
         name: 'Cereals with Berries',
+        description: 'Take Berries and put into bowl',
         amount: 200,
         unit: 'g',
         tags: ['Iron', 'Histamine', 'Veggie']
       },
       {
         name: 'Cereals with Apples',
+        description: 'Take cereals and put into bowl',
         amount: 150,
         unit: 'g',
         tags: ['Iron', 'Histamine', 'Veggie']
@@ -49,6 +52,7 @@ export class Tab1Page {
     Noodles: [
       {
         name: 'Veggie Lasagne',
+        description: 'Take lasagne and put into bowl',
         amount: 1,
         unit: 'plate',
         tags: []
@@ -57,6 +61,7 @@ export class Tab1Page {
     Potatoes: [
       {
         name: 'Spicy Oven Potatoes',
+        description: 'Take potatoes and put into bowl',
         amount: 4,
         unit: 'pieces',
         tags: []
@@ -122,6 +127,7 @@ export class Tab1Page {
   addRecipe(category: string, data: any) {
     const newRecipe = {
       name: data.name,
+      description: data.description,
       amount: parseInt(data.amount, 10),
       unit: data.unit,
       tags: [] // Hier könnten später Tags hinzugefügt werden, wenn benötigt

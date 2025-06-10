@@ -2,12 +2,14 @@
   "Cereal": [
     {
       "name": "Cereals with Berries",
+      "description": "Berries",
       "amount": 200,
       "unit": "g",
       "tags": ["Iron", "Histamine", "Veggie"]
     },
     {
       "name": "Cereals with Apples",
+      "description": "Apples",
       "amount": 0.5,
       "unit": "kg",
       "tags": ["Iron", "Histamine", "Veggie"]
@@ -16,6 +18,7 @@
   "Noodles": [
     {
       "name": "Veggie Lasagne",
+      "description": "Lasagne",
       "amount": 1,
       "unit": "plate",
       "tags": ["Veggie"]
@@ -24,6 +27,7 @@
   "Potatoes": [
     {
       "name": "Spicy Oven Potatoes",
+      "description": "Potatoes",
       "amount": 4,
       "unit": "pieces",
       "tags": []
